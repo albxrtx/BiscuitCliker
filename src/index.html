@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="output.css" rel="stylesheet" />
+    <title>Biscuit Clicker</title>
+  </head>
+  <body class="bg-gray-950 flex flex-col items-center w-full">
+    <h1
+      class="bg-gray-900 text-gray-400 text-2xl font-semibold h-12 flex justify-center items-center w-full"
+    >
+      BiscuitClicker
+    </h1>
+    <h2
+      class="bg-gray-900 text-gray-400 flex font-semibold w-[90%] mt-5 p-3 rounded"
+    >
+      <p>Puntuacion:</p>
+      <span id="puntuacion" class="text-end w-full">0</span>
+    </h2>
+    <img
+      id="img"
+      class="w-60 m-5 rounded-[50%]"
+      src="img/cookie.png"
+      alt="cookie-img"
+    />
+    <div class="grid grid-cols-2 gap-5 mt-5">
+      <button
+        id="btn-2"
+        class="btn-desactivados"
+        onclick="cambiarMultiplicador(2)"
+      >
+        x2
+      </button>
+      <button
+        id="btn-5"
+        class="btn-desactivados"
+        onclick="cambiarMultiplicador(5)"
+      >
+        x5
+      </button>
+      <button
+        id="btn-10"
+        class="btn-desactivados"
+        onclick="cambiarMultiplicador(10)"
+      >
+        x10
+      </button>
+      <button
+        id="btn-50"
+        class="btn-desactivados"
+        onclick="cambiarMultiplicador(50)"
+      >
+        x50
+      </button>
+      <button
+        id="btn-100"
+        class="btn-desactivados"
+        onclick="cambiarMultiplicador(100)"
+      >
+        x100
+      </button>
+      <button
+        id="btn-AutoClick"
+        class="btn-desactivados"
+        onclick="activarAutoClick()"
+      >
+        AutoClick
+      </button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
