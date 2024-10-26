@@ -17,37 +17,37 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function activarBotones() {
     if (puntos >= 20) {
-      puntos - 20;
+      puntos -= 20;
       btn2.classList.remove("btn-desactivados");
       btn2.classList.add("btn-activados");
       actualizarPuntuacion();
     }
     if (puntos >= 50) {
-      puntos - 50;
+      puntos -= 50;
       btn5.classList.remove("btn-desactivados");
       btn5.classList.add("btn-activados");
       actualizarPuntuacion();
     }
     if (puntos >= 100) {
-      puntos - 100;
+      puntos -= 100;
       btn10.classList.remove("btn-desactivados");
       btn10.classList.add("btn-activados");
       actualizarPuntuacion();
     }
     if (puntos >= 500) {
-      puntos - 500;
+      puntos -= 500;
       btn50.classList.remove("btn-desactivados");
       btn50.classList.add("btn-activados");
       actualizarPuntuacion();
     }
     if (puntos >= 1000) {
-      puntos - 1000;
+      puntos -= 1000;
       btn100.classList.remove("btn-desactivados");
       btn100.classList.add("btn-activados");
       actualizarPuntuacion();
     }
     if (puntos >= 2000) {
-      puntos - 2000;
+      puntos -= 2000;
       btnAutoClick.classList.remove("btn-desactivados");
       btnAutoClick.classList.add("btn-activados");
       actualizarPuntuacion();
